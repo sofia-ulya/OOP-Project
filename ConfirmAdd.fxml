@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00539CFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.ConfirmAddController">
+   <children>
+      <Pane layoutX="36.0" layoutY="86.0" prefHeight="36.0" prefWidth="531.0" style="-fx-background-color: #FFD662FF;" />
+      <ListView fx:id="codeSub" layoutX="36.0" layoutY="114.0" prefHeight="200.0" prefWidth="105.0" />
+      <ListView fx:id="subSub" layoutX="141.0" layoutY="114.0" prefHeight="200.0" prefWidth="364.0" />
+      <Label layoutX="67.0" layoutY="91.0" text="CODE" />
+      <Label layoutX="294.0" layoutY="91.0" text="SUBJECT" />
+      <ListView fx:id="credSub" layoutX="505.0" layoutY="114.0" prefHeight="200.0" prefWidth="62.0" />
+      <Label layoutX="511.0" layoutY="91.0" text="CREDIT" />
+      <Button fx:id="backBtn" layoutX="437.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #FFD662FF;" text="Back" />
+      <Pane prefHeight="48.0" prefWidth="603.0" style="-fx-background-color: #FFD662FF;">
+         <children>
+            <Label layoutX="188.0" layoutY="11.0" text="Add Subjects Confirmation">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="addBtn" layoutX="506.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #92F990;" text="Add" />
+   </children>
+</AnchorPane>

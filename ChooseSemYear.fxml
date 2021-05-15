@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="228.0" prefWidth="409.0" style="-fx-background-color: #00539CFF; -fx-border-color: #000000; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.ChooseSemYearController">
+   <children>
+      <ComboBox fx:id="comboSem" layoutX="218.0" layoutY="82.0" onAction="#cbSem" prefHeight="25.0" prefWidth="159.0" promptText="--Choose Semester--" style="-fx-background-color: #f8ed80;">
+         <effect>
+            <ColorAdjust saturation="-1.0" />
+         </effect></ComboBox>
+      <ComboBox fx:id="comboYear" layoutX="33.0" layoutY="82.0" onAction="#cbYear" prefHeight="25.0" prefWidth="159.0" promptText="--Choose Year--" style="-fx-background-color: #f8ed80;">
+         <effect>
+            <ColorAdjust saturation="-1.0" />
+         </effect></ComboBox>
+      <Button fx:id="submit" layoutX="336.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleFormSubmission" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #FFD662FF;" text="Next" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="14.0" prefHeight="52.0" prefWidth="392.0" style="-fx-background-color: #FFD662FF; -fx-border-color: black; -fx-border-width: 2;" text="Choose your year of study and semester" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Button fx:id="buttonBack" layoutX="269.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleFormBack" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #FFD662FF;" text="Back" />
+      <Label fx:id="yearLabel" alignment="CENTER" layoutX="34.0" layoutY="139.0" prefHeight="17.0" prefWidth="79.0" text="Year" textFill="WHITE" />
+      <Label layoutX="122.0" layoutY="139.0" text="/" textFill="WHITE" />
+      <Label fx:id="semLabel" alignment="CENTER" layoutX="135.0" layoutY="139.0" prefHeight="17.0" prefWidth="79.0" text="Semester" textFill="WHITE" />
+   </children>
+</AnchorPane>
